@@ -1,0 +1,23 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Label?>
+<VBox fx:controller="client.ChangeNicknameController"
+      xmlns:fx="http://javafx.com/fxml" alignment="center">
+
+    <stylesheets>
+        <URL value="@/css/style.css"/>
+    </stylesheets>
+
+    <Label text="Old nickname"/>
+    <TextField fx:id="oldNicknameField" HBox.hgrow="ALWAYS" promptText="old nickname"/>
+    <Label text="New nickname"/>
+    <TextField fx:id="newNicknameField" HBox.hgrow="ALWAYS" promptText="new nickname"/>
+    <Label text="Password"/>
+    <PasswordField fx:id="passwordField" HBox.hgrow="ALWAYS" promptText="password"/>
+    <TextArea fx:id="textArea" VBox.vgrow="ALWAYS" editable="false"/>
+    <Button text="Change nickname" onAction="#clickBtnChangeNickname"/>
+</VBox>
